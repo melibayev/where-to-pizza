@@ -32,8 +32,8 @@ const HomePage = () => {
     slidesToScroll: 1
   };
   // Filtered variables
-  let box = products.filter((el) => el.category =='Комбо')
-  let pizza = products.filter((el) => el.category == 'Пицца')  
+  let box = products.filter((el) => el.category ==='Комбо')
+  let pizza = products.filter((el) => el.category === 'Пицца')  
 
 
 
