@@ -100,7 +100,7 @@ const HomePage = () => {
         <div className={styles.product_slider}>
           <Slider {...productSettings}>
           {box.map((pr) => (
-            <Card {...pr}/>
+            <Card key={pr.id} {...pr}/>
           ))}
           </Slider>
         </div>
