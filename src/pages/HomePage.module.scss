@@ -4,21 +4,17 @@
 
 .slider {
     padding: 20px 0;
-    padding-left: 20px;
-}
-.slider_items {
-    display: flex !important;
-    gap: 20px;
+    padding-left: 10px;
 }
 
 .category_item {
     display: grid !important;
-    grid-template-columns: 1fr 1.7fr !important;
+    grid-template-columns: 1fr 2fr !important;
     justify-content: center;
     align-items: center;
-    width: 110px !important;
+    width: 108px !important;
     gap: 0px;
-    padding: 8px 12px;
+    padding: 8px 10px;
     border-radius: 4px;
     border: 1px solid #C4C4C4;
     svg {
@@ -31,6 +27,7 @@
         text-align: center;
     }
 }
+
 
 .product_slider {
     padding-bottom: 32px;
@@ -70,11 +67,21 @@
     }
 }
 
+// Products
+
 #pizzaSection {
     padding-top: 32px;
+    padding-bottom: 32px;
 }
 
-.pizza_home {
+#sushiSection, #zakuskiSection,
+#desertsSection, #drinksSection {
+    padding-bottom: 32px;
+}
+
+.pizza_home, .sushi_home,
+.zakuski_home, .deserts_home,
+.drinks_home {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -91,8 +98,140 @@
         font-size: 14px;
         border: 1px solid #C4C4C4;
         border-radius: 40px;
+        color: #000;
+        transition: .5s;
         svg {
             font-size: 20px;
         }
+        &:hover {
+            background-color: #000;
+            color: #FFFFFF;
+        }
+    }
+}
+
+#home_info {
+    padding-bottom: 32px;
+        h4 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 12px;
+        }
+
+        span {
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 600;
+        }
+}
+
+.boxx {
+    position: fixed;
+    width: 100%;
+    height: calc(100vh - 200px);
+    left: 0;
+    bottom: -100%;
+    transition: .5s;
+    border-top: 1px solid #E2E2E2;
+    background-color: #FFFFFF;
+    .closeBtn {
+        position: absolute;
+        padding: 20px;
+        right: 0;
+        svg {
+            font-size: 32px;
+        }
+    }
+}
+
+.product_open {
+    bottom: 0px;
+}
+
+.product_image {
+    text-align: center;
+    padding: 10px 0;
+    img {
+        width: 80%;
+        border-radius: 50%;
+        border: 1px solid #C4C4C4;
+    }
+}
+.product_name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    svg {
+        font-size: 24px;
+        fill: red;
+    }
+    h4 {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    margin-bottom: 12px;
+}
+
+.product_type {
+    position: relative;
+    & > button {
+        width: 50%;
+    }
+    display: flex;
+    button {
+        padding: 16px 20px;
+        border-radius: 8px;
+        font-size: 14px;
+        background-color:#EDEDED;
+    }
+    margin-bottom: 20px;
+}
+
+.changeColor {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 8px;
+    color: #FFFFFF;
+    background-color: black;
+    transition: .5s;
+    p {
+        position: absolute;
+        bottom: 15px;
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+.moveLeft {
+    transform: translateX(100%);
+}
+
+.addCart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 10px;
+    border-top: 1px solid#E2E2E2;
+    border-bottom: 1px solid#E2E2E2;
+    p {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    button {
+        padding: 12px 30px;
+        background-color: #000;
+        border-radius: 48px;
+        color: #FFFFFF;
+        font-size: 14px;
     }
 }

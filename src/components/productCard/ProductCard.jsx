@@ -1,11 +1,16 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { Fragment } from 'react'
+import { useBoolContext } from '../../context/BoolContext';
 import './ProductCard.scss'
 
-const ProductCard = ({id, img, name, description, price}) => {
+const ProductCard = ({id, img, name, description, price,}) => {
+  const {setBooleanValue } = useBoolContext();
+  const saveProduct = (id) => {
+    localStorage.setItem('product', id);
+    setBooleanValue(true);
+  }
   return (
-    <NavLink>
-        <div className='product_card'>
+    <Fragment>
+        <div className='product_card' onClick={() => saveProduct(id)}>
             <div className="product_card__img">
                 <img src={img} alt="" />
             </div>
@@ -15,7 +20,7 @@ const ProductCard = ({id, img, name, description, price}) => {
                 <p>от {price} ₽</p>
             </div>
         </div>
-    </NavLink>
+    </Fragment>
   )
 }
 

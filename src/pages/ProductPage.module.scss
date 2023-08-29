@@ -1,0 +1,35 @@
+.product__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h4 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    svg {
+        font-size: 24px;
+    }
+    margin-bottom: 16px;
+}
+
+.product__image {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.product_item {
+    width: 100px !important;
+    position: relative;
+    padding: 30px;
+    background-color: #EDEDED;
+    height: 100px;
+    object-fit: cover;
+    img {
+        width: 100%;
+    }
+    p {
+        position: absolute;
+        left: 5px;
+        bottom: 0px;
+    }
+}
