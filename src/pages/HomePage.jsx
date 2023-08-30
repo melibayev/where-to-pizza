@@ -2,12 +2,12 @@ import React, { Fragment, useState } from 'react'
 import Slider from 'react-slick';
 import { GiCakeSlice } from 'react-icons/gi'
 import { CiLocationOn } from 'react-icons/ci'
-import { products } from '../components/data/data';
 import { AiOutlineFilter } from 'react-icons/ai'
 import {GiCancel}  from 'react-icons/gi'
 import { AiOutlineFire }  from 'react-icons/ai'
 import Card from '../components/productCard/Card';
 import styles from './HomePage.module.scss';
+import { products } from '../components/data/data';
 
 import Pizza from '../assets/images/home/pizza.svg'
 import Zakuski from '../assets/images/home/zakuski.svg'

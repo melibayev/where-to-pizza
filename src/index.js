@@ -6,14 +6,14 @@ import reportWebVitals from './reportWebVitals';
 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import { BoolProvider } from './context/BoolContext';
+// import { BoolProvider } from './context/BoolContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BoolProvider>
+    {/* <BoolProvider> */}
       <App />
-    </BoolProvider>
+    {/* </BoolProvider> */}
   </React.StrictMode>
 );
 
