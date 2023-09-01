@@ -201,11 +201,11 @@ const HomePage = () => {
               <div className="container">
                 <button onClick={productClose} className={styles.closeBtn}><GiCancel /></button>
                 <div className={styles.product_image}>
-                  <img src={product !== '' ? product.img : ''} alt="" />
+                  <img src={product !== '' && product !== undefined ? product.img : ''} alt="" />
                 </div>
                 <div className={styles.product_name}>
                   <AiOutlineFire />
-                  <h4>{product !== '' ? product.name : ''}</h4>
+                  <h4>{product !== '' && product !== undefined ? product.name : ''}</h4>
                 </div>
                 <div className={styles.product_type}>
                   <button onClick={changeState}><p>Традиционное</p></button>
@@ -216,7 +216,7 @@ const HomePage = () => {
                 </div>
 
                 <div className={styles.addCart}>
-                  <p>Итого: {product.price} ₽</p>
+                  <p>Итого:  {product !== '' && product !== undefined ? product.price : ''} ₽</p>
                   <button onClick={saveToCart}>
                     Добавить
                   </button>
