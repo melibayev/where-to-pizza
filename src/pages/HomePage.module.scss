@@ -133,10 +133,11 @@
 .boxx {
     position: fixed;
     width: 100%;
-    height: calc(100vh - 110px);
+    height: calc(100vh);
     left: 0;
     bottom: -100%;
     transition: .5s;
+    z-index: 100;
     border-top: 1px solid #E2E2E2;
     background-color: #FFFFFF;
     .closeBtn {
