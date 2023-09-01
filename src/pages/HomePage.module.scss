@@ -133,7 +133,7 @@
 .boxx {
     position: fixed;
     width: 100%;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 110px);
     left: 0;
     bottom: -100%;
     transition: .5s;
@@ -145,12 +145,13 @@
         right: 0;
         svg {
             font-size: 32px;
+            stroke: #000;
         }
     }
 }
 
 .product_open {
-    bottom: 0px;
+    bottom: 0;
 }
 
 .product_image {
