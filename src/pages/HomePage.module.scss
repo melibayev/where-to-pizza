@@ -4,7 +4,6 @@
 
 .slider {
     padding: 20px 0;
-    padding-left: 10px;
 }
 
 .category_item {
@@ -12,8 +11,7 @@
     grid-template-columns: 1fr 2fr !important;
     justify-content: center;
     align-items: center;
-    width: 108px !important;
-    gap: 0px;
+    width: fit-content;
     padding: 8px 10px;
     border-radius: 4px;
     border: 1px solid #C4C4C4;
